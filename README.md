@@ -2,7 +2,7 @@
 
 # Description:
 
-this is a custom script repository, it's used with tampermonkey, and for the sole purpose of reducing the strain on the eye by making more websites in dark theme and bold fonts
+### this is a custom script repository, it's used with tampermonkey, and for the sole purpose of reducing the strain on the eye by making more websites in dark theme and bold fonts
 
 # link to install TamperMonkey from
 

@@ -6,7 +6,7 @@ this is a custom script repository, it's used with tampermonkey, and for the sol
 
 # link to install TamperMonkey from
 
-[chrome store]['https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en']
+https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en
 
 # Code to add
 
@@ -43,4 +43,4 @@ this is a custom script repository, it's used with tampermonkey, and for the sol
              svg,.image,.video-wrapper{filter:invert(1) hue-rotate(180deg) !important}';},300)
 
     // Your code here...
-})();```
+})();

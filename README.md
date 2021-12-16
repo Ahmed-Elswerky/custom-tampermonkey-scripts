@@ -31,16 +31,17 @@ https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldm
 // @grant        none
 // ==/UserScript==
 
+
 (function() {
-    'use strict';
- setTimeout(function (){
-     document.head.appendChild(document.createElement('style'))
-     document.querySelector('style').innerHTML
-         += '*{font-weight:600;}\
+    setTimeout(function (){
+        var style = document.createElement('style')
+        style.innerHTML
+            += `*{font-weight:bold !important;}\
              html{filter:invert(1) hue-rotate(180deg) !important}\
              body{background: beige;}\
-             img,.bixrwtb6 {filter:invert(1) hue-rotate(180deg) !important}\
-             svg,.image,.video-wrapper{filter:invert(1) hue-rotate(180deg) !important}';},300)
+             img,.bixrwtb6 ,svg,.image,.video-wrapper{filter:invert(1) hue-rotate(180deg) !important}`;
+        document.head.appendChild(style);
+    },1)
 
     // Your code here...
 })();

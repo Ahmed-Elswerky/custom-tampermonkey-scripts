@@ -31,15 +31,20 @@ https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldm
 // @grant        none
 // ==/UserScript==
 
-
 (function() {
     setTimeout(function (){
         var style = document.createElement('style')
-        style.innerHTML
-            += `*{font-weight:bold !important;}\
+        let css=`*{font-weight:bold !important;}\
              html{filter:invert(1) hue-rotate(180deg) !important}\
              body{background: beige;}\
              img,.bixrwtb6 ,svg,.image,.video-wrapper{filter:invert(1) hue-rotate(180deg) !important}`;
+        style.type = 'text/css';
+        if (style.styleSheet){
+            // This is required for IE8 and below.
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
         document.head.appendChild(style);
     },1)
 

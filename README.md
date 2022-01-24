@@ -27,6 +27,20 @@ https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldm
 // @match        https://developer.android.com/*
 // @match        https://drive.google.com/*
 // @match        https://dillinger.io/*
+// @match        localhost:3001/*
+// @match        antqueuelive.web.app/*
+// @match        https://translate.google.com/*
+// @match        https://console.firebase.google.com/*
+// @match        https://www.npmjs.com/*
+// @match        https://console.cloud.google.com/*
+// @match        https://cloud.google.com/*
+// @match        https://play.google.com/*
+// @match        https://realmefirmware.com/*
+// @match        https://ant.design/*
+// @match        https://react-bootstrap.github.io/*
+// @match        https://www.itwonders-web.com/*
+// @match        https://www.linkedin.com/*
+// @match        https://www.diffchecker.com/*
 // @icon         https://www.google.com/s2/favicons?domain=messenger.com
 // @grant        none
 // ==/UserScript==
@@ -36,7 +50,7 @@ https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldm
         var style = document.createElement('style')
         let css=`*{font-weight:bold !important;}\
              html{filter:invert(1) hue-rotate(180deg) !important}\
-             body{background: beige;}\
+             body{background:whitesmoke}\
              img,.bixrwtb6 ,svg,.image,.video-wrapper{filter:invert(1) hue-rotate(180deg) !important}`;
         style.type = 'text/css';
         if (style.styleSheet){

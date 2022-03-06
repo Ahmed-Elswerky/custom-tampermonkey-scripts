@@ -5,13 +5,13 @@
 
 https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en
 
+------------------------------------
 
-
-Scripts sonsisting of:
+Scripts consisting of:
 - Dark themeing multiple websites
 - Facebook hiding main timeline 
 
-
+------------------------------------
 
 - # Dark themeing multiple websites
 
@@ -71,7 +71,8 @@ Scripts sonsisting of:
     },1)
 
     // Your code here...
-})(); ```
+})(); 
+```
 
 
 - # Facebook hiding main timeline 

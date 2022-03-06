@@ -1,12 +1,20 @@
-# custom-script-for-dark-theme
+## This repo goal is sharing Tampermoneky extension code (js code mainly) , that is helpful for safer and more productive web browsing.
 
-# Description:
-
-### this is a custom script repository, it's used with tampermonkey, and for the sole purpose of reducing the strain on the eye by making more websites in dark theme and bold fonts
 
 # link to install TamperMonkey from
 
 https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en
+
+
+
+Scripts sonsisting of:
+- Dark themeing multiple websites
+- Facebook hiding main timeline 
+
+
+
+- # Dark themeing multiple websites
+
 
 # Code to add
 
@@ -52,6 +60,40 @@ https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldm
              html{filter:invert(1) hue-rotate(180deg) !important}\
              body{background:whitesmoke}\
              img,.bixrwtb6 ,svg,.image,.video-wrapper{filter:invert(1) hue-rotate(180deg) !important}`;
+        style.type = 'text/css';
+        if (style.styleSheet){
+            // This is required for IE8 and below.
+            style.styleSheet.cssText = css;
+        } else {
+            style.appendChild(document.createTextNode(css));
+        }
+        document.head.appendChild(style);
+    },1)
+
+    // Your code here...
+})(); ```
+
+
+- # Facebook hiding main timeline 
+
+
+# Code to add
+
+```// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match       https://www.facebook.com/*
+// @icon         https://www.google.com/s2/favicons?domain=messenger.com
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    setTimeout(function (){
+        var style = document.createElement('style')
+        let css=`div[role='main']{display:none;}`;
         style.type = 'text/css';
         if (style.styleSheet){
             // This is required for IE8 and below.

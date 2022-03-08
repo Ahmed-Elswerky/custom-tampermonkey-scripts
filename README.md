@@ -18,7 +18,8 @@ Scripts consisting of:
 
 # Code to add
 
-```// ==UserScript==
+```
+// ==UserScript==
 // @name         New Userscript
 // @namespace    http://tampermonkey.net/
 // @version      0.1
@@ -80,7 +81,8 @@ Scripts consisting of:
 
 # Code to add
 
-```// ==UserScript==
+```
+// ==UserScript==
 // @name         New Userscript
 // @namespace    http://tampermonkey.net/
 // @version      0.1

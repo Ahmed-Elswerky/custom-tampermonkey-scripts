@@ -59,7 +59,7 @@ Scripts consisting of:
         var style = document.createElement('style')
         let css=`*{font-weight:bold !important;}\
              html{filter:invert(1) hue-rotate(180deg) !important}\
-             body{background:whitesmoke}\
+             html,body,main,footer{background-color:#f6f7f9 !important}\
              img,.bixrwtb6 ,svg,.image,.video-wrapper{filter:invert(1) hue-rotate(180deg) !important}`;
         style.type = 'text/css';
         if (style.styleSheet){
@@ -72,7 +72,7 @@ Scripts consisting of:
     },1)
 
     // Your code here...
-})(); 
+})();
 ```
 
 
